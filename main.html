@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sierpiński Triangle SVG Generation</title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Content Description" />
+    <meta name="keywords" content="any, keywords, you, want" />
+    <meta name="author" content="Ikaros Kappler" />
+    <meta name="date" content="2015-04-22" />
+
+    <script src="lib/jquery-3.2.0.min.js"></script>
+    <script src="lib/FileSaver.js"></script>
+    <script src="main.js"></script>
+    <style>
+      body { font-family : "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+    </style>
+  </head>
+  <body>
+
+    <h1>An SVG friendly Sierpiński triangle generator</h1>
+    
+    Iterations: <input type="number" id="iterations" min="0" value="4" step="1" />
+    <button type="button" id="build">Build</button>
+    <input type="checkbox" id="auto_update" checked="checked" /> <label for="auto_update">auto update</label>
+    <br/>
+    Size <input type="number" id="size" min="25" value="400" step="25" />px<br/>
+    <br/>
+    Fractal length: <code>3<sup>n+1</sup>/2<sup>n</sup>=<span id="out_length">_</span> px</code>, Fractal area: <code>(3/4)<sup>n</sup>=<span id="out_area">_</span></code> px<sup>2</sup><br/>
+    <button type="button" id="save_svg">Save *.svg</button>
+    <button type="button" id="show_svg">Show svg</button><br/>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" id="sierpinski_svg" width="600" height="600" style="background-color: #e8e8e8;">
+      <defs>
+	<style>
+	  .s_path {
+	     fill : #58c8fd;
+	     stroke : black;
+	     stroke-width : 1px;
+	     stroke-linecap : round;
+	     stroke-linejoin : round;
+	  }
+	</style>
+      </defs>
+      <g>
+	<path id="_p_template" class="s_path" />
+      </g>
+    </svg>
+    
+  </body>
+</html>
