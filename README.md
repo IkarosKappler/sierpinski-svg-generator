@@ -11,4 +11,6 @@ Screenshot:
 * Export as SVG file.
 
 
-Note: the runtime is worst.
+###### Note ######
+The runtime is worst. This was just an javascript-to-svg-export proof of concept.
+
