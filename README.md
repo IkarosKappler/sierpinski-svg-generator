@@ -9,3 +9,6 @@ Screenshot:
 
 * Compute your triangle.
 * Export as SVG file.
+
+
+Note: the runtime is worst.
