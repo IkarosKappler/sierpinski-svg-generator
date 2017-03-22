@@ -12,5 +12,5 @@ Screenshot:
 
 
 ###### Note ######
-The runtime is worst. This was just an javascript-to-svg-export proof of concept.
+The runtime is worst [O(3^n) depending on the number of iterations]. This was just an javascript-to-svg-export proof of concept.
 
